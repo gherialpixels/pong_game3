@@ -1,3 +1,5 @@
+#:import random random
+
 <ScatterTextWidget>:
     orientation: 'vertical'
     TextInput:
@@ -6,8 +8,29 @@
         size_hint_y: None
         height: 200
         text: 'default'
+        # this added function changes the colour of the text every time its pressed
+        # root.change_label_colour()
+        # root refers to the python original file; of course we could just make the colour static
+        # but we can do that function in this file too
+        on_text: root.change_label_colour()
     FloatLayout:
         Scatter:
             Label:
+                id: my_label
                 text: my_textinput.text
                 font_size: 150
+                color: root.text_colour
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 150
+        Label:
+            id: label1
+            text: my_textinput.text[:3][::-1]
+            font_size: 100
+            color: root.text_colour
+        Label:
+            id: label2
+            text: my_textinput.text[-3:][::-1]
+            font_size: 100
+            color: root.text_colour
