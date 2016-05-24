@@ -3,6 +3,7 @@ kivy.require('1.9.1')
 
 from kivy.app import App
 from kivy.uix.label import Label
+#from kivy.event import EventDispatcher
 
 
 class MouseText(Label):
