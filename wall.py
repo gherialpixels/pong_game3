@@ -10,7 +10,7 @@ class Wall(Widget):
         It should be overridden.
         :return: None
         """
-        pass
+        print "in Wall!"
 
     def __init__(self, **kwargs):
         super(Wall, self).__init__(self, **kwargs)
