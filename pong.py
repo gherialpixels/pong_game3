@@ -1,12 +1,12 @@
 import kivy
-kivy.require('1.9.1')
-
 from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.scatter import Scatter
 from kivy.uix.label import Label
+kivy.require('1.9.1')
+
 
 # Main file, where program starts
 
