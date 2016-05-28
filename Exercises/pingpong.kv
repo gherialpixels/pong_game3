@@ -2,6 +2,17 @@
 
 <ScatterTextWidget>:
     orientation: 'vertical'
+    # this canvas is NOT a widget
+    # notice the order; we defined canvas before everything, so it appears in the background
+    canvas:
+        Color:
+            # blue
+            rgba: 0, 0, 1, 1
+        Rectangle:
+            # self.pos and self.size refers to the ScatterTextWidget, which takes up
+            # the whole area under the text entry area, meaning everything under will be blue
+            pos: self.pos
+            size: self.size
     TextInput:
         id: my_textinput
         font_size: 150
