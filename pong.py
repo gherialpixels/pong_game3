@@ -12,8 +12,7 @@ from kivy.uix.label import Label
 class PongApp(App):
     def build(self):
         b = Button(text="Hello!")
-        l = Label(text="Hello",
-                  size=150)
+        l = Label(text="Hello")
         s = Scatter()
         f = FloatLayout(orientation='vertical',
                         size=(300, 300))
