@@ -1,5 +1,6 @@
 import cmath
 
+
 class Vector:
     def __init__(self, x, y):
         self.x = x
@@ -21,6 +22,9 @@ class Vector:
 
     def norm2(self):
         return cmath.sqrt(self.x ** 2 + self.y ** 2)
+
+    def to_list(self):
+        return [self.x, self.y]
 
 ZERO = Vector(0, 0)
 UP = Vector(0, 1)
