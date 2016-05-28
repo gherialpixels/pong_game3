@@ -7,7 +7,7 @@ class Ball:
         self.y = y
         self.size = size
 
-    def displayCircleText(self):
-        print "Pos. X: ", self.x, ", Pos. Y: ", self.y, ", Size: ", self.size
+    def display_circle_text(self):
+        print "Pos. X: ", str(self.x), ", Pos. Y: ", str(self.y), ", Size: ", str(self.size)
 
 standardBall = Ball(0, 0, 30)
