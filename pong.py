@@ -7,7 +7,8 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.scatter import Scatter
 from kivy.uix.label import Label
 
-# Main file, where program sure
+# Main file, where the program starts
+
 
 class PongApp(App):
     def build(self):
